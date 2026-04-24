@@ -1,0 +1,93 @@
+---
+import "../styles/global.css";
+import logo from "../assets/kristof-logo-white.webp";
+---
+
+<!-- Navigation --><!-- <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm"> -->
+<nav class="fixed top-0 w-full z-50 backdrop-blur-sm">
+	<div class="max-w-7xl mx-auto">
+		<div class="flex h-18 items-center justify-between">
+			<!-- Logo -->
+			<div class="ps-5">
+				<a href="#">
+					<img src={logo.src} alt="Logo Kristof" class="h-7 w-auto" />
+				</a>
+			</div>
+
+			<!-- Mobile menu button-->
+			<div class="pe-4 sm:hidden">
+				<button
+					type="button"
+					id="mobile-menu-button"
+					class="relative inline-flex items-center justify-center rounded-md p-2 text-rose hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-rose">
+					<span class="absolute -inset-0.5"></span>
+					<span class="sr-only">Open main menu</span>
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.5"
+						data-slot="icon"
+						aria-hidden="true"
+						class="size-8 hamburger-icon">
+						<path
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.5"
+						data-slot="icon"
+						aria-hidden="true"
+						class="size-8 close-icon hidden">
+						<path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+			</div>
+
+			<!-- Nav Items -->
+			<div class="hidden sm:flex flex-1 items-center sm:items-stretch sm:justify-end">
+				<div class="flex justify-end space-x-4 pe-5">
+					<a href="#about" class="px-3 py-2 sm:text-sm text-white hover:text-rose">Over Mij</a>
+					<a href="#services" class="px-3 py-2 sm:text-sm text-white hover:text-rose">Diensten</a>
+					<a href="#projects" class="px-3 py-2 sm:text-sm text-white hover:text-rose">Projecten</a>
+					<a
+						href="#contact"
+						class="bg-rose rounded-4xl px-5 py-2 sm:text-sm ms-5 text-background hover:bg-cyan">Contact</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div
+		id="mobile-menu"
+		class="hidden block sm:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0">
+		<div class="space-y-1 px-4 pt-4 pb-3 border-b border-gray-700">
+			<a
+				href="#about"
+				class="block rounded-md px-6 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-rose"
+				>Over Mij</a
+			>
+			<a
+				href="#services"
+				class="block rounded-md px-6 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-rose"
+				>Diensten</a
+			>
+			<a
+				href="#projects"
+				class="block rounded-md px-6 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-rose"
+				>Projecten</a
+			>
+
+			<div class="mt-10 ms-4 mb-25">
+				<a href="#contact" class="bg-rose rounded-4xl px-5 py-2 text-sm text-background hover:bg-cyan"
+					>Contact</a
+				>
+			</div>
+		</div>
+	</div>
+</nav>
