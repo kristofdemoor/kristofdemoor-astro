@@ -5,8 +5,24 @@ const { pageTitle } = Astro.props;
 ---
 
 <BaseLayout pageTitle="Een Website Laten Maken | Kristof De Moor">
-<!-- Header -->
- <header class="mt-20 p-50">
-    <div class="text-white">Hello World</div>
- </header>
-</BaseLayout>   
+	<!-- Header -->
+	<header class="max-w-7xl mx-auto px-5">
+		<div
+			class="flex flex-col justify-center items-center text-center px-5 space-y-8 max-w-2xl mx-auto min-h-screen">
+			<h1 class="text-4xl font-bold md:text-5xl">
+				Een website laten maken op maat van uw bedrijf<span class="text-rose">.</span>
+			</h1>
+			<p class="md:text-lg">
+				Ik maak moderne websites op maat van jouw bedrijf en verwachtingen. Van strategie en design tot
+				ontwikkeling en lancering.
+            </p>
+			<!-- Buttons -->
+			<div class="mt-2">
+				<a href="#projects" class="bg-cyan text-background rounded-4xl px-6 py-3 me-3 hover:bg-rose"
+					>Vraag offerte aan</a
+				>
+			</div>
+		</div>
+	</header>
+	<!--  -->
+</BaseLayout>
