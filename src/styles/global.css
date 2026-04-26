@@ -64,3 +64,7 @@ html {
 		transform 0.3s ease,
 		opacity 0.25s ease;
 }
+
+.debug {
+	@apply border border-green-400
+}
