@@ -5,6 +5,17 @@ const { pageTitle } = Astro.props;
 ---
 
 <BaseLayout pageTitle="Een Website Laten Maken | Kristof De Moor">
+	<!-- Radial Gradient Light Effect -->
+	<div class="inset-0 -z-10 overflow-hidden">
+        <!-- Left -->
+		<div
+			class="hidden lg:block absolute top-0 -left-80 w-175 h-175 bg-cyan/20 rounded-full blur-[200px]">
+		</div>
+        <!-- Right -->
+		<div
+			class="hidden lg:block absolute top-0 -right-80 w-175 h-175 bg-rose/20 rounded-full blur-[200px]">
+		</div>
+	</div>
 	<!-- Header -->
 	<header class="max-w-7xl mx-auto px-5">
 		<div
@@ -284,56 +295,62 @@ const { pageTitle } = Astro.props;
 	<section id="faq" class="max-w-6xl mx-auto px-5 my-35">
 		<h3 class="text-3xl font-bold text-center md:text-4xl">Veelgestelde vragen<span class="text-rose">.</span></h3>
 		<!-- Questions container -->
-		<div class="max-w-3xl mx-auto text-left rounded-3xl mt-20">
+		<div class="max-w-3xl mx-auto text-left leading-relaxed rounded-3xl mt-20">
 			<!-- Question 1 -->
-			<div class="border-b border-white/50 pb-6 mb-7">
+			<div class="border-b border-white/50 pb-4 mb-10">
 				<button class="accordion-btn flex justify-between w-full">
-					<div class="text-xl font-bold text-left px-2">Hoeveel kost het om een website te laten maken?</div>
+					<div class="text-xl font-medium text-left px-2">
+						Hoeveel kost het om een website te laten maken?
+					</div>
 					<div class="faq-icon text-3xl font-extralight pe-2">+</div>
 				</button>
 				<!-- Answer 1 -->
-				<div class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 transition-all duration-300 ease-in-out">
+				<div
+					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 my-3 transition-all duration-300 ease-in-out">
 					De prijs hangt af van jouw wensen en de complexiteit van de website. Je kan kiezen uit verschillende
 					pakketten, afhankelijk van het aantal pagina’s en functionaliteiten. Je ontvangt altijd een
 					duidelijke offerte op maat, zonder verborgen kosten.
 				</div>
 			</div>
 			<!-- Question 2 -->
-			<div class="border-b border-white/50 pb-6 mb-7">
+			<div class="border-b border-white/50 pb-4 mb-10">
 				<button class="accordion-btn flex justify-between w-full">
-					<div class="text-xl font-bold text-left px-2">Moet ik zelf hosting en domeinnaam regelen?</div>
+					<div class="text-xl font-medium text-left px-2">Moet ik zelf hosting en domeinnaam regelen?</div>
 					<div class="faq-icon text-3xl font-extralight pe-2">+</div>
 				</button>
 				<!-- Answer 2 -->
-				<div class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 transition-all duration-300 ease-in-out">
+				<div
+					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 my-3 transition-all duration-300 ease-in-out">
 					De prijs hangt af van jouw wensen en de complexiteit van de website. Je kan kiezen uit verschillende
 					pakketten, afhankelijk van het aantal pagina’s en functionaliteiten. Je ontvangt altijd een
 					duidelijke offerte op maat, zonder verborgen kosten.
 				</div>
 			</div>
 			<!-- Question 3 -->
-			<div class="border-b border-white/50 pb-6 mb-7">
+			<div class="border-b border-white/50 pb-4 mb-10">
 				<button class="accordion-btn flex justify-between w-full">
-					<div class="text-xl font-bold text-left px-2">
+					<div class="text-xl font-medium text-left px-2">
 						Hoe lang duurt het om een website te laten maken?
 					</div>
 					<div class="faq-icon text-3xl font-extralight pe-2">+</div>
 				</button>
 				<!-- Answer 3 -->
-				<div class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 transition-all duration-300 ease-in-out">
+				<div
+					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 my-3 transition-all duration-300 ease-in-out">
 					De prijs hangt af van jouw wensen en de complexiteit van de website. Je kan kiezen uit verschillende
 					pakketten, afhankelijk van het aantal pagina’s en functionaliteiten. Je ontvangt altijd een
 					duidelijke offerte op maat, zonder verborgen kosten.
 				</div>
 			</div>
 			<!-- Question 4 -->
-			<div class="pb-6 mb-5">
+			<div class="pb-4 mb-10">
 				<button class="accordion-btn flex justify-between w-full">
-					<div class="text-xl font-bold text-left px-2">Zorg jij ook voor teskt en beeldmateriaal?</div>
+					<div class="text-xl font-medium text-left px-2">Zorg jij ook voor teskt en beeldmateriaal?</div>
 					<div class="faq-icon text-3xl font-extralight pe-2">+</div>
 				</button>
 				<!-- Answer 4 -->
-				<div class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 transition-all duration-300 ease-in-out">
+				<div
+					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 my-3 transition-all duration-300 ease-in-out">
 					De prijs hangt af van jouw wensen en de complexiteit van de website. Je kan kiezen uit verschillende
 					pakketten, afhankelijk van het aantal pagina’s en functionaliteiten. Je ontvangt altijd een
 					duidelijke offerte op maat, zonder verborgen kosten.
