@@ -13,7 +13,7 @@ const { pageTitle } = Astro.props;
 		<div class="hidden lg:block absolute top-0 -right-80 w-175 h-175 bg-rose/20 rounded-full blur-[200px]"></div>
 	</div>
 	<!-- Header -->
-	<header class=" max-w-7xl mx-auto px-5">
+	<header class="max-w-7xl mx-auto px-5">
 		<div
 			class="flex flex-col justify-center items-center text-center px-5 space-y-8 max-w-2xl mx-auto min-h-screen">
 			<h1 class="text-4xl font-bold leading-14 md:text-5xl">
@@ -25,7 +25,7 @@ const { pageTitle } = Astro.props;
 			</p>
 			<!-- Buttons -->
 			<div class="mt-2">
-				<a href="#projects" class="bg-cyan text-background rounded-4xl px-6 py-3 me-3 hover:bg-rose"
+				<a href="/#contact" class="bg-cyan text-background rounded-4xl px-6 py-3 me-3 hover:bg-rose"
 					>Vraag offerte aan</a
 				>
 			</div>
@@ -147,7 +147,7 @@ const { pageTitle } = Astro.props;
 		<!-- Proces container -->
 		<div class="flex flex-wrap gap-12 justify-center my-20 mx-auto">
 			<!-- Step 1 -->
-			<div class="flex flex-col space-y-8 justify-center items-center w-60 mb-5">
+			<div class="flex flex-col space-y-8 items-center w-60 mb-5">
 				<!-- Circle -->
 				<div
 					class="flex items-center justify-center text-4xl font-extrabold text-rose bg-white/10 rounded-full w-18 h-18 p-2">
@@ -161,7 +161,7 @@ const { pageTitle } = Astro.props;
 				</p>
 			</div>
 			<!-- Step 2 -->
-			<div class="flex flex-col space-y-8 justify-center items-center w-60 mb-5">
+			<div class="flex flex-col space-y-8 items-center w-60 mb-5">
 				<!-- Circle -->
 				<div
 					class="flex items-center justify-center text-4xl font-extrabold text-rose bg-white/10 rounded-full w-18 h-18 p-2">
@@ -175,7 +175,7 @@ const { pageTitle } = Astro.props;
 				</p>
 			</div>
 			<!-- Step 3 -->
-			<div class="flex flex-col space-y-8 justify-center items-center w-60 mb-5">
+			<div class="flex flex-col space-y-8 items-center w-60 mb-5">
 				<!-- Circle -->
 				<div
 					class="flex items-center justify-center text-4xl font-extrabold text-rose bg-white/10 rounded-full w-18 h-18 p-2">
@@ -189,7 +189,7 @@ const { pageTitle } = Astro.props;
 				</p>
 			</div>
 			<!-- Step 4 -->
-			<div class="flex flex-col space-y-8 justify-center items-center w-60">
+			<div class="flex flex-col space-y-8 items-center w-60">
 				<!-- Circle -->
 				<div
 					class="flex items-center justify-center text-4xl font-extrabold text-rose bg-white/10 rounded-full w-18 h-18 p-2">
@@ -206,9 +206,14 @@ const { pageTitle } = Astro.props;
 	</section>
 	<!-- Hoeveel een website kost -->
 	<section id="pricing" class="max-w-6xl mx-auto px-5 my-35">
-		<h2 class="text-3xl font-bold text-center md:text-4xl">
+        <div class="max-w-3xl mx-auto text-center space-y-5">
+		<h2 class="text-3xl font-bold md:text-4xl">
 			De kostprijs van een website<span class="text-rose">.</span>
 		</h2>
+		<p class="">
+Ik werk met transparante prijzen zonder verrassingen. Onderstaande bedragen zijn richtprijzen en geven een goede indicatie, afhankelijk van de complexiteit en omvang van jouw project. Voor een exacte prijs bezorg ik een offerte op maat.
+		</p>
+        </div>
 		<!-- Price container -->
 		<div
 			class="flex flex-col space-y-5 gap-12 justify-center items-center my-20 mx-auto px-5 md:flex-row md:space-y-0 md-space-x-10">
