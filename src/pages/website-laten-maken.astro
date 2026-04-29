@@ -7,17 +7,13 @@ const { pageTitle } = Astro.props;
 <BaseLayout pageTitle="Een Website Laten Maken | Kristof De Moor">
 	<!-- Radial Gradient Light Effect -->
 	<div class="inset-0 -z-10 overflow-hidden">
-        <!-- Left -->
-		<div
-			class="hidden lg:block absolute top-0 -left-80 w-175 h-175 bg-cyan/20 rounded-full blur-[200px]">
-		</div>
-        <!-- Right -->
-		<div
-			class="hidden lg:block absolute top-0 -right-80 w-175 h-175 bg-rose/20 rounded-full blur-[200px]">
-		</div>
+		<!-- Left -->
+		<div class="hidden lg:block absolute top-0 -left-80 w-175 h-175 bg-cyan/20 rounded-full blur-[200px]"></div>
+		<!-- Right -->
+		<div class="hidden lg:block absolute top-0 -right-80 w-175 h-175 bg-rose/20 rounded-full blur-[200px]"></div>
 	</div>
 	<!-- Header -->
-	<header class="max-w-7xl mx-auto px-5">
+	<header class=" max-w-7xl mx-auto px-5">
 		<div
 			class="flex flex-col justify-center items-center text-center px-5 space-y-8 max-w-2xl mx-auto min-h-screen">
 			<h1 class="text-4xl font-bold leading-14 md:text-5xl">
@@ -292,7 +288,7 @@ const { pageTitle } = Astro.props;
 		</div>
 	</section>
 	<!-- FAQ -->
-	<section id="faq" class="max-w-6xl mx-auto px-5 my-35">
+	<section id="faq" class="bg-linear-to-b from-background to-slate-900 px-5 pb-25">
 		<h3 class="text-3xl font-bold text-center md:text-4xl">Veelgestelde vragen<span class="text-rose">.</span></h3>
 		<!-- Questions container -->
 		<div class="max-w-3xl mx-auto text-left leading-relaxed rounded-3xl mt-20">
@@ -343,14 +339,14 @@ const { pageTitle } = Astro.props;
 				</div>
 			</div>
 			<!-- Question 4 -->
-			<div class="pb-4 mb-10">
+			<div class="pb-4">
 				<button class="accordion-btn flex justify-between w-full">
 					<div class="text-xl font-medium text-left px-2">Zorg jij ook voor teskt en beeldmateriaal?</div>
 					<div class="faq-icon text-3xl font-extralight pe-2">+</div>
 				</button>
 				<!-- Answer 4 -->
 				<div
-					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 my-3 transition-all duration-300 ease-in-out">
+					class="accordion-answer max-h-0 overflow-hidden text-white/80 px-6 mt-3 transition-all duration-300 ease-in-out">
 					De prijs hangt af van jouw wensen en de complexiteit van de website. Je kan kiezen uit verschillende
 					pakketten, afhankelijk van het aantal pagina’s en functionaliteiten. Je ontvangt altijd een
 					duidelijke offerte op maat, zonder verborgen kosten.

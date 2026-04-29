@@ -19,6 +19,7 @@ mobileMenuButton?.addEventListener("click", () => {
     } else {
         // Open menu
         mobileMenu?.classList.remove("hidden");
+        mobileMenu?.classList.add("block");
         mobileMenu?.classList.remove("max-h-screen"); // Ensure it's at 0
         mobileMenu?.classList.add("max-h-0");
         hamburgerIcon?.classList.add("hidden");
