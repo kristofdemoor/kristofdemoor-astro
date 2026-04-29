@@ -20,7 +20,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 					Hallo, mijn<br />naam is Kristof
 				</h1>
 				<h2 class="font-extralight text-2xl sm:text-4xl mt-4">
-					Ik ben een <span class="text-cyan">developer</span>
+					Ik ben een <span class="typed text-cyan" data-typed-items="Developer, Designer, Fotograaf"></span>
 				</h2>
 				<p class="font-light lg:text-lg text-white/70 leading-loose lg:pe-5">
 					Met sterke websites en krachtige visuele beelden help ik jouw bedrijf groeien in de digitale wereld.
@@ -478,4 +478,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			</div>
 		</section>
 	</main>
+	<script>
+		import "../scripts/typed.js/typed.umd.js";
+	</script>
 </BaseLayout>

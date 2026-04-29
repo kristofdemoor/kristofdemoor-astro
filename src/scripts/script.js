@@ -1,9 +1,23 @@
-// Set current year in footer
 document.addEventListener("DOMContentLoaded", function () {
+    // Hero Typewriter effect: See https://mattboldt.github.io/typed.js/docs/
+    var typed = new Typed('.typed', {
+        strings: ["Developer", "Designer", "Fotograaf"],
+        typeSpeed: 80,
+        backSpeed: 40,
+        backDelay: 2000,
+        loop: true,
+    });
+
+    // Footer get current year
     const yearSpan = document.getElementById("year");
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
+
+
+
 });
+
+
 
 // Counter animation for highlights section
 function animateCounter(element, target, duration = 1250) {
