@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Hero Typewriter effect: See https://mattboldt.github.io/typed.js/docs/
     var typed = new Typed('.typed', {
-        strings: ["Webdeveloper", "Designer", "Fotograaf"],
+        strings: ["Websites", "Grafisch Ontwerp", "Fotografie"],
         typeSpeed: 80,
         backSpeed: 40,
         backDelay: 2000,
@@ -12,12 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const yearSpan = document.getElementById("year");
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
-
-
-
 });
-
-
 
 // Counter animation for highlights section
 function animateCounter(element, target, duration = 1250) {
