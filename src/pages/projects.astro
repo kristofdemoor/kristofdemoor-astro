@@ -1,0 +1,161 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const { pageTitle } = Astro.props;
+---
+
+<BaseLayout pageTitle="Projects | Harvard CS50 Final Project">
+	<!-- Radial Gradient Light Effect -->
+	<div class="inset-0 -z-10 overflow-hidden">
+		<!-- Left -->
+		<div class="hidden lg:block absolute top-0 -left-80 w-175 h-175 bg-cyan/20 rounded-full blur-[200px]"></div>
+		<!-- Right -->
+		<div class="hidden lg:block absolute top-0 -right-80 w-175 h-175 bg-rose/20 rounded-full blur-[200px]"></div>
+	</div>
+
+	<!-- "Projecten" -->
+	<section id="projects" class="py-35">
+		<div class="max-w-7xl mx-auto px-6 lg:px-8">
+			<!-- title -->
+			<h2 class="text-4xl font-bold text-center md:text-5xl mb-10">
+				Projecten<span class="relative text-rose">.</span>
+			</h2>
+			<!-- Category filters -->
+			<div class="flex flex-col justify-center w-1/2 mx-auto gap-3 mb-15 md:flex-row">
+				<button
+					type="button"
+					data-filter=".all"
+					class="filter-btn rounded-full px-5 py-2 text-sm font-medium bg-rose text-white shadow-sm shadow-rose/20"
+					>Alles</button
+				>
+				<button
+					type="button"
+					data-filter=".website"
+					class="filter-btn rounded-full px-5 py-2 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10"
+					>Website</button
+				>
+				<button
+					type="button"
+					data-filter=".grafisch-ontwerp"
+					class="filter-btn rounded-full px-5 py-2 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10"
+					>Grafisch Ontwerp</button
+				>
+				<button
+					type="button"
+					data-filter=".fotografie"
+					class="filter-btn rounded-full px-5 py-2 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10"
+					>Fotografie</button
+				>
+			</div>
+			<div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Project 1: Website -->
+				<div
+					data-category="website"
+					class="website group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/0 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<a href="/projects-website-harvard">
+						<div
+							class="aspect-video bg-linear-to-br from-cyan/20 to-rose/20 flex items-center justify-center">
+							<img
+								src="/src/assets/project-harvard.png"
+								alt="Project Harvard"
+								class="h-full w-full object-cover transition-all duration-300 group-hover:scale-110"
+							/>
+						</div>
+						<div class="p-6">
+							<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Website</div>
+							<h3 class="text-xl font-semibold text-white mb-2">Harvard CS50 Final Project</h3>
+							<p class="text-white/70 text-sm leading-relaxed">
+								Een HTML5 Star Wars Space Shooter gebouwd met Phaser game framework als final project
+								voor Harvard's CS50 Computer Science course.
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Project 2: Grafisch Ontwerp -->
+				<div
+					data-category="grafisch-ontwerp"
+					class="grafisch-ontwerp group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<div class="aspect-video bg-linear-to-br from-rose/20 to-cyan/20 flex items-center justify-center">
+						<span class="text-white/50 text-sm">Design Preview</span>
+					</div>
+					<div class="p-6">
+						<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Grafisch Ontwerp</div>
+						<h3 class="text-xl font-semibold text-white mb-2">Logo Ontwerp voor Tech Startup</h3>
+						<p class="text-white/70 text-sm leading-relaxed">
+							Creatief logo en branding pakket voor een innovatieve tech startup, inclusief visitekaartjes
+							en social media templates.
+						</p>
+					</div>
+				</div>
+				<!-- Project 3: Fotografie -->
+				<div
+					data-category="fotografie"
+					class="fotografie group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<div class="aspect-video bg-linear-to-br from-cyan/20 to-rose/20 flex items-center justify-center">
+						<span class="text-white/50 text-sm">Foto Preview</span>
+					</div>
+					<div class="p-6">
+						<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Fotografie</div>
+						<h3 class="text-xl font-semibold text-white mb-2">Product Fotografie voor Fashion Brand</h3>
+						<p class="text-white/70 text-sm leading-relaxed">
+							Professionele productfoto's voor een mode merk, met aandacht voor styling, belichting en
+							compositie.
+						</p>
+					</div>
+				</div>
+				<!-- Project 4: Website -->
+				<div
+					data-category="website"
+					class="website group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<div class="aspect-video bg-linear-to-br from-rose/20 to-cyan/20 flex items-center justify-center">
+						<span class="text-white/50 text-sm">Website Preview</span>
+					</div>
+					<div class="p-6">
+						<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Website</div>
+						<h3 class="text-xl font-semibold text-white mb-2">Portfolio Site voor Fotograaf</h3>
+						<p class="text-white/70 text-sm leading-relaxed">
+							Een elegante portfolio website met galerij, contactformulier en blog integratie voor een
+							professionele fotograaf.
+						</p>
+					</div>
+				</div>
+				<!-- Project 5: Grafisch Ontwerp -->
+				<div
+					data-category="grafisch-ontwerp"
+					class="grafisch-ontwerp group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<div class="aspect-video bg-linear-to-br from-cyan/20 to-rose/20 flex items-center justify-center">
+						<span class="text-white/50 text-sm">Design Preview</span>
+					</div>
+					<div class="p-6">
+						<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Grafisch Ontwerp</div>
+						<h3 class="text-xl font-semibold text-white mb-2">Brochure Ontwerp voor Restaurant</h3>
+						<p class="text-white/70 text-sm leading-relaxed">
+							Visueel aantrekkelijke brochure voor een restaurant, inclusief menu design en fotografie
+							styling.
+						</p>
+					</div>
+				</div>
+				<!-- Project 6: Fotografie -->
+				<div
+					data-category="website"
+					class="website group rounded-3xl bg-white/5 overflow-hidden backdrop-blur-sm border border-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+					<div class="aspect-video bg-linear-to-br from-rose/20 to-cyan/20 flex items-center justify-center">
+						<span class="text-white/50 text-sm">Foto Preview</span>
+					</div>
+					<div class="p-6">
+						<div class="text-xs uppercase tracking-wide text-rose font-semibold mb-2">Fotografie</div>
+						<h3 class="text-xl font-semibold text-white mb-2">Evenement Fotografie voor Bedrijfsfeest</h3>
+						<p class="text-white/70 text-sm leading-relaxed">
+							Uitgebreide fotoreportage van een bedrijfsfeest, met aandacht voor sfeer, mensen en details.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<script>
+	import "../scripts/projects.js";
+</script>

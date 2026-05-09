@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Hero Typewriter effect: See https://mattboldt.github.io/typed.js/docs/
-    var typed = new Typed('.typed', {
-        strings: ["Websites", "Grafisch Ontwerp", "Fotografie"],
+    const typed = new Typed('.typed', {
+        strings: ["websites", "design", "fotografie"],
         typeSpeed: 80,
         backSpeed: 40,
         backDelay: 2000,
