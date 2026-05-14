@@ -18,7 +18,10 @@ import logo from "../assets/kristof-logo-white.webp";
 				<!-- Social Icons Container -->
 				<div class="flex pt-1 space-x-1">
 					<!-- Github Icon-->
-					<a href="https://github.com/kristofdemoor" target="_blank" class="w-10 h-10 shrink-0 text-white/70 hover:text-rose">
+					<a
+						href="https://github.com/kristofdemoor"
+						target="_blank"
+						class="w-10 h-10 shrink-0 text-white/70 hover:text-rose">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
 							><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
 							<path
@@ -28,7 +31,10 @@ import logo from "../assets/kristof-logo-white.webp";
 						</svg>
 					</a>
 					<!-- LinkedIn Icon -->
-					<a href="https://www.linkedin.com/in/kristof-de-moor-a138b046/" target="_blank" class="w-10 h-10 shrink-0 text-white/70 hover:text-rose">
+					<a
+						href="https://www.linkedin.com/in/kristof-de-moor-a138b046/"
+						target="_blank"
+						class="w-10 h-10 shrink-0 text-white/70 hover:text-rose">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
 							><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
 							<path
@@ -44,16 +50,15 @@ import logo from "../assets/kristof-logo-white.webp";
 			<div class="space-y-4">
 				<h3 class="text-white font-semibold">Navigatie</h3>
 				<div class="space-y-2">
-					<a href="/#about" class="block text-white/70 hover:text-rose transition-colors text-sm"
-						>Over Mij</a
-					>
+					<a href="/#about" class="block text-white/70 hover:text-rose transition-colors text-sm">Over Mij</a>
 					<a href="/#services" class="block text-white/70 hover:text-rose transition-colors text-sm"
 						>Diensten</a
 					>
 					<a href="/#projects" class="block text-white/70 hover:text-rose transition-colors text-sm"
 						>Projecten</a
 					>
-					<a href="/#contact" class="block text-white/70 hover:text-rose transition-colors text-sm">Contact</a>
+					<a href="/#contact" class="block text-white/70 hover:text-rose transition-colors text-sm">Contact</a
+					>
 				</div>
 			</div>
 
@@ -67,8 +72,11 @@ import logo from "../assets/kristof-logo-white.webp";
 					<a href="/grafisch-ontwerp" class="block text-white/70 hover:text-rose transition-colors text-sm"
 						>Grafisch Ontwerp</a
 					>
-					<a href="/fotografie" class="block text-white/70 hover:text-rose transition-colors text-sm">Fotografie</a>
-					<a href="/#contact" class="block text-white/70 hover:text-rose transition-colors text-sm">Contact</a>
+					<a href="/fotografie" class="block text-white/70 hover:text-rose transition-colors text-sm"
+						>Fotografie</a
+					>
+					<a href="/#contact" class="block text-white/70 hover:text-rose transition-colors text-sm">Contact</a
+					>
 				</div>
 			</div>
 
@@ -96,3 +104,14 @@ import logo from "../assets/kristof-logo-white.webp";
 		</div>
 	</div>
 </footer>
+
+<script>
+	// Footer set current year
+	const yearSpan = document.getElementById("year");
+	const currentYear = new Date().getFullYear().toString();
+
+	if(yearSpan !== null) {
+		yearSpan.textContent = currentYear;
+	}
+
+</script>

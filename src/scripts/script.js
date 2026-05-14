@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         backDelay: 2000,
         loop: true,
     });
-
-    // Footer get current year
-    const yearSpan = document.getElementById("year");
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
 });
 
 // Counter animation for highlights section
